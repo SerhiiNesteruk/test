@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.wix.minesweeper.GameController"
+            stylesheets="application.css">
+    <top>
+        <HBox alignment="BASELINE_LEFT" spacing="3" id="top-menu">
+            <Button text=":)" onMouseClicked="#startBeginnerGame"/>
+            <Button text=":/" onMouseClicked="#startIntermediateGame"/>
+            <Button text=":(" onMouseClicked="#startExpertGame"/>
+            <Label fx:id="status" text="..."/>
+        </HBox>
+    </top>
+    <center>
+        <TilePane fx:id="tilePanel" id="mine-field" orientation="VERTICAL">
+
+        </TilePane>
+    </center>
+</BorderPane>

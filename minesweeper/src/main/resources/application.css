@@ -1,0 +1,89 @@
+#top-menu {
+    -fx-padding: 3;
+}
+
+#mine-field {
+    -fx-padding: 6;
+}
+
+.tile {
+    -fx-padding: 1;
+}
+
+.cell {
+    -fx-max-height: 21;
+    -fx-max-width: 21;
+    -fx-min-height: 21;
+    -fx-min-width: 21;
+}
+
+#mine-field .text {
+    -fx-font-weight: bolder;
+}
+
+.cell.mine.triggered .tile {
+    -fx-stroke: red;
+    -fx-stroke-width: 1;
+}
+
+.cell.mine .text {
+    -fx-effect: innershadow(one-pass-box, lightgrey, 8, 0.1, 1, 1);
+}
+
+.cell.mine .tile {
+    -fx-stroke: lightgrey;
+    -fx-stroke-width: 1;
+    -fx-fill: white;
+}
+
+.cell.opened .tile {
+    -fx-stroke: lightgrey;
+    -fx-stroke-width: 1;
+    -fx-fill: white;
+}
+
+.cell.closed .tile {
+    -fx-stroke-line-join: round;
+    -fx-stroke-line-cap: round;
+    -fx-arc-width: 5;
+    -fx-arc-height: 5;
+    -fx-effect: innershadow(one-pass-box, black, 6, 0.1, -1, -1);
+    -fx-fill: lightgrey;
+}
+
+.cell.flag .text {
+    -fx-fill: red;
+    -fx-effect: dropshadow(one-pass-box, black, 8, 0.0, 1, 1);
+}
+
+.cell.n1 .text {
+    -fx-fill: green;
+}
+
+.cell.n2 .text {
+    -fx-fill: blue;
+}
+
+.cell.n3 .text {
+    -fx-fill: red;
+}
+
+.cell.n4 .text {
+    -fx-fill: darkorange;
+}
+
+.cell.n5 .text {
+    -fx-fill: magenta;
+}
+
+.cell.n6 .text {
+    -fx-fill: saddlebrown;
+}
+
+.cell.n7 .text {
+    -fx-fill: olive;
+}
+
+.cell.n8 .text {
+    -fx-fill: black;
+}
